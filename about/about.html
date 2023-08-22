@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='./about.css'>
+  <link rel="stylesheet" href="../shared/shared.css">
+  <link rel="icon" href="../shared/favicon.png" sizes='any' type="image/x-icon">
+  <script src='https://kit.fontawesome.com/395b4471a7.js' crossorigin='anonymous'></script>
+  <title>InspireMe | Audio Page</title>
+</head>
+
+<body>
+  <header id="header" class='nav__container'>
+    <!-- Navbar -->
+    <script type="module">
+      import { createNavbar } from '../shared/shared.js';
+      const navbarContainer = document.querySelector('.nav__container');
+      navbarContainer.appendChild(createNavbar());
+    </script>
+
+    <!-- Banner -->
+    <div class="banner">
+      <h1>You <span>only live once</span>? <br>
+        <span>FALSE!</span><br>
+        You <span>only die once</span>.<br>
+        You <span>live every day</span>.
+      </h1>
+    </div>
+  </header>
+
+  <main>
+    <!-- About us -->
+    <section class='section about-us__section'>
+      <div class='title about-us__title'>
+        <h2><span>About Us</span></h2>
+      </div>
+
+      <div class="about-us__info">
+        <img src="./Prince-Ea-3.png" alt="founder image">
+        <p class='audio__item-text'>
+          InspireMe was founded by me Prince Ea. Born and raised on the North Side of St. Louis Missouri, I graduated
+          Magna Cum Laude from a full scholarship at the University of Missouri St. Louis, with my BA in Anthropology.
+          Over a decade ago, I was making music with grand ambitions of gaining respect, being named the best rapper of
+          all time and performing in front of thousands of fans. This egoic pursuit caused a lot of suffering. I began
+          to compare myself with other musicians that were "further along" than I was and this caused much internal
+          pain.
+          <br>
+          <br>
+          The suffering and unhappiness was so much that I stopped making music and decided that I simply wanted to be
+          happy. This is when I began to read ancient and modern texts on spirituality. I became enthralled in
+          everything from the Baghavad Gita to the Tao te Ching. Through literature and introspection, I realized that
+          "doing" will never make me happy, it is only in "being" where happiness and peace arises.
+          <br>
+          <br>
+          Another Huge Realization was of the limited number of breaths that each of us is to take on this planet. This
+          realization of the brevity of life was what led me to create Inspire ME. I am grateful for every moment, every
+          unrepeatable miracle, and while I am here I want to help the real-life heroes to reach every single heart on
+          the planet to show them that at our core we are Love, we are free, and we are one.
+          <br>
+          <br>
+          InspireMe is unlike any other association in the world. This unique charity organization has sparked the
+          imaginations of many people across the UK and around the globe. Inspire ME is a global community, welcoming
+          people from every discipline and culture who seek a deeper understanding of the world. We believe passionately
+          in the power of ideas to change attitudes, lives and, ultimately, the world. We are building a clearinghouse
+          of free knowledge from the world's most inspired thinkers — and a community of curious souls to engage with
+          ideas and each other, both online and at our events around the world, all year long.
+        </p>
+      </div>
+    </section>
+
+    <section class='section contact__section'>
+      <div class='title contact__title'>
+        <h2><span>Get in touch</span></h2>
+      </div>
+
+      <!-- Contact -->
+      <div class="contact__content">
+
+        <!-- Contact form -->
+        <div class='title contact__form'>
+          <form id="myForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+  
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+  
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+  
+            <label for="country">Country:</label>
+            <select id="country" name="country"></select>
+  
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+  
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+
+        <!-- Opening hours table -->
+        <div class="title contact__table">
+          <table>
+            <thead>
+              <tr>
+                <th>Day of the week</th>
+                <th>Open</th>
+                <th>Close</th>
+              </tr>
+            </thead>
+            <tbody id="openingHours">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class='section map__section'>
+      <div class='title map__title'>
+        <h2><span>Come and visit us</span></h2>
+      </div>
+
+      <iframe
+        src="https://maps.google.com/maps?q=414%20Coldharbour%20Ln%20Brixton%2C%20London%20SW9%208LF%20UK&t=&z=13&ie=UTF8&iwloc=&output=embed">
+      </iframe>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class='footer'>
+    <script type="module">
+      import { createFooter } from '../shared/shared.js';
+      const footerElement = document.querySelector('.footer');
+      footerElement.appendChild(createFooter());
+    </script>
+  </footer>
+
+  <a class='scroll-link top-link' href='#header'>
+    <i class='fas fa-arrow-up'></i>
+  </a>
+
+  <!-- Javascript -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'
+    integrity='sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=='
+    crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+  <script src='./about.js'></script>
+  <script type="module" src="../shared/shared.js"></script>
+</body>
+</html>

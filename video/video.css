@@ -1,0 +1,74 @@
+@import url(../index/index.css);
+
+header {
+  background: url(../video/hero.jpg) center/cover no-repeat;
+}
+
+.banner span {
+  font-family: var(--ff-optional);
+}
+
+.speaker-video__section {
+  margin: 3rem auto;
+}
+
+.videos__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.video__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.video__item:not(:last-child) {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--clr-primary-5);
+}
+
+.video__item:not(:first-child) {
+  padding-top: 3rem;
+}
+
+.video__item-info {
+  width: 100%;
+}
+
+.video__item-info img {
+  width: 50%;
+  object-fit: cover;
+  float: left;
+  margin: 0 2rem 1rem 0;
+}
+
+.video__item-info p {
+  text-align: justify;
+}
+
+.video__item video {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+@media (max-width: 576px) {
+  .video__item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .video__item-info img {
+    width: 100%;
+    float: none;
+    margin: 0 0 1rem 0;
+  }
+}

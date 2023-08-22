@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='./video.css'>
+  <link rel="stylesheet" href="../shared/shared.css">
+  <link rel="icon" href="../shared/favicon.png" sizes='any' type="image/x-icon">
+  <script src='https://kit.fontawesome.com/395b4471a7.js' crossorigin='anonymous'></script>
+  <title>InspireMe | Video Page</title>
+</head>
+
+<body>
+  <header id="header" class='nav__container'>
+
+    <!-- Navbar -->
+    <script type="module">
+      import { createNavbar } from '../shared/shared.js';
+      const navbarContainer = document.querySelector('.nav__container');
+      navbarContainer.appendChild(createNavbar());
+    </script>
+
+    <!-- Banner -->
+    <div class="banner">
+      <h1>Every accomplishment <span>starts with</span> the decision to <span>Try</span></h1>
+    </div>
+  </header>
+
+  <main>
+        <!-- Videos -->
+        <section class='section speaker-video__section'>
+          <div class='title speaker-video__title'>
+            <h2><span>Videos from our guest speakers</span></h2>
+          </div>
+          <div class="videos__container">
+            <!-- Video items -->
+          </div>
+        </section>        
+  </main>
+  
+  <!-- Footer -->
+  <footer class='footer'>
+    <script type="module">
+      import { createFooter } from '../shared/shared.js';
+      const footerElement = document.querySelector('.footer');
+      footerElement.appendChild(createFooter());
+    </script>
+  </footer>
+
+  <a class='scroll-link top-link' href='#header'>
+    <i class='fas fa-arrow-up'></i>
+  </a>
+
+  <!-- Javascript -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'
+    integrity='sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=='
+    crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+  <script type="module" src='./video.js'></script>
+  <script type='module' src='../shared/shared.js'></script>
+</body>
+</html>

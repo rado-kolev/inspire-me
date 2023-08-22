@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='./index.css'>
+  <link rel="stylesheet" href="../shared/shared.css">
+  <link rel="icon" href="../shared/favicon.png" sizes='any' type="image/x-icon">
+  <script src='https://kit.fontawesome.com/395b4471a7.js' crossorigin='anonymous'></script>
+  <title>InspireMe | Home Page</title>
+</head>
+
+<body>
+  <header id="header" class='nav__container'>
+
+    <!-- Navbar -->
+    <script type="module">
+      import { createNavbar } from '../shared/shared.js';
+      const navbarContainer = document.querySelector('.nav__container');
+      navbarContainer.appendChild(createNavbar());
+    </script>
+
+    <!-- Banner -->
+    <div class='banner'>
+      <h1><span>You can do anything!</span></h1>
+      <h2>Just get up and do it, follow Your dreams!</h2>
+    </div>
+  </header>
+  
+  <main>
+    <!-- Motto -->
+    <section class='section motto__section'>
+      <div class='title motto__title'>
+        <h2>Our <span>Believe</span></h2>
+        <h3>
+          We shouldn't be afraid of what we want to achieve. <br>
+          We have to fight to do it. <br>
+          It doesn't matter how many blows we will get. <br>
+          It doesn't matter how many times we will fall. <br>
+          What matters is how many times we will stand up to continue. <br>
+          <span>Until we surrender ourselves, nothing can beat us!</span>
+        </h3>
+      </div>
+    </section>
+
+    <!-- Video-regrets -->
+    <section class='section video__section'>
+      <div class='title video__title'>
+        <h2>Is that your <span>Biggest Regret</span>?</h2>
+        <video controls muted autoplay>
+          <source src='./homePageVideo.mp4' type='video/mp4'>
+        </video>
+      </div>
+    </section>
+
+    <!-- Changes -->
+    <section class='section changes__section'>
+      <div class='title changes__title'>
+        <h2>Simple ways to <span>change Your Life</span></h2>
+      </div>
+      <div class='changes__container'>
+        <!-- ! 12 divs with the 12 changes from: https://www.dailymotivation.site/12-ridiculously-simple-life-changes-you-can-make-today/ -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class='footer'>
+    <script type="module">
+      import { createFooter } from '../shared/shared.js';
+      const footerElement = document.querySelector('.footer');
+      footerElement.appendChild(createFooter());
+    </script>
+  </footer>
+
+  <a class='scroll-link top-link' href='#header'>
+    <i class='fas fa-arrow-up'></i>
+  </a>
+
+  <div class='intro'>
+    <div class='intro__text'>
+      <h1 class='hide'>
+        <span class='text'>Motivation?</span>
+      </h1>
+      <h1 class='hide'>
+        <span class='text'>It's right inside You!!!</span>
+      </h1>
+    </div>
+  </div>
+  <div class='slider'></div>
+
+  <!--  Javascript -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'
+    integrity='sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=='
+    crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+    <script type='module' src='../shared/shared.js'></script>
+  <script type='module' src='./index.js'></script>
+</body>
+</html>

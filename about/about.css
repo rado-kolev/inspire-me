@@ -1,0 +1,171 @@
+@import url(../index/index.css);
+
+header {
+  background: url(./hero.jpg) center/cover no-repeat;
+}
+
+.banner span {
+  font-family: var(--ff-optional);
+}
+
+.about-us__section {
+  margin: 3rem auto;
+}
+
+.about-us__info {
+  width: 95%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.about-us__info img {
+  width: 20rem;
+  height: auto;
+  float: left;
+  margin: 0 2rem 1rem 0;
+}
+
+.about-us__info p {
+  text-align: justify;
+}
+
+.contact__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contact__form {
+  width: 50%;
+  border: 2px solid var(--clr-primary-5);
+  border-radius: 0.5rem;
+  background-color: #f2f2f2;
+  padding: 1.5rem;
+}
+
+.contact__form input[type=text],
+.contact__form input[type=email],
+.contact__form select,
+.contact__form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--clr-primary-5);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+.contact__form button {
+  display: block;
+  margin: 0 auto;
+  background: var(--clr-primary-5);
+  color: white;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+.contact__form button:hover {
+    background: var(--clr-primary-1);
+}
+
+.contact__table table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--clr-primary-5);
+}
+
+.contact__table td,
+.contact__table th {
+  border: 1px solid var(--clr-primary-5);
+  text-align: left;
+  padding: 1.5rem 2rem;
+}
+
+.contact__table th {
+  background-color: var(--clr-primary-6);
+}
+
+.contact__table tr:nth-child(even) {
+  background-color: var(--clr-primary-9);
+}
+
+.map__section {
+  margin: 3rem auto;
+}
+
+.map__section iframe {
+  border: 0;
+  overflow: hidden;
+  width: 90%;
+  height: 20rem;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact__form {
+    width: 75%;
+  }
+
+  .contact__table table {
+    margin: 2.5rem auto 0 auto;
+  }
+
+  .contact__table td,
+  .contact__table th {
+    padding: 1.15rem 2.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__form {
+    width: 85%;
+  }
+
+  .contact__table td,
+  .contact__table th {
+    padding: 1.15rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner {
+    top: 40%;
+  }
+
+  .about-us__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-us__info img {
+    width: 12rem;
+    margin: 0 auto 2.5rem auto;
+  }
+
+  .contact__form {
+    width: 95%;
+  }
+
+  .contact__table td,
+  .contact__table th {
+    padding: 0.5rem;
+  }
+}
