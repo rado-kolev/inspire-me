@@ -13,7 +13,7 @@ export function createNavbar() {
   navHeader.className = 'nav__header';
 
   const logoLink = document.createElement('a');
-  logoLink.href = '../index/index.html?skipIntro';
+  logoLink.href = '../index.html?skipIntro';
 
   const logoImg = document.createElement('img');
   logoImg.src = '../shared/logo.png';
@@ -40,7 +40,7 @@ export function createNavbar() {
   ulLinks.className = 'nav__links';
 
   const links = [
-    { text: 'Home', href: '../index/index.html?skipIntro' },
+    { text: 'Home', href: '../index.html?skipIntro' },
     { text: 'Video', href: '../video/video.html' },
     { text: 'Audio', href: '../audio/audio.html' },
     { text: 'About Us', href: '../about/about.html' }
@@ -168,7 +168,7 @@ export function createFooter() {
   // Logo
   const logoDiv = document.createElement('div');
   const logoLink = document.createElement('a');
-  logoLink.href = '../index/index.html?skipIntro';
+  logoLink.href = '../index.html?skipIntro';
   const logoImg = document.createElement('img');
   logoImg.src = '../shared/logo.png';
   logoImg.className = 'footer__logo';
@@ -182,7 +182,7 @@ export function createFooter() {
   navList.className = 'footer__nav';
 
   const navLinks = [
-    { text: 'Home', href: '../index/index.html?skipIntro' },
+    { text: 'Home', href: '../index.html?skipIntro' },
     { text: 'Video', href: '../video/video.html' },
     { text: 'Audio', href: '../audio/audio.html' },
     { text: 'About Us', href: '../about/about.html' },
