@@ -52,6 +52,10 @@ export function createNavbar() {
     a.href = link.href;
     a.textContent = link.text;
 
+    // ! Set data-page attribute based on the page name
+    const pageName = link.href.split('/').pop().split('.')[0];
+    a.setAttribute('data-page', pageName);
+
     li.appendChild(a);
     ulLinks.appendChild(li);
   });
@@ -142,16 +146,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentURL = window.location.pathname;
 
   navLinks.forEach(link => {
-    const linkHref = link.getAttribute('href');
+    // const linkHref = link.getAttribute('href');
+    const linkPage = link.getAttribute('data-page'); // Get the data-page attribute
 
-    // Removing '../' and '?skipIntro' from the link href
-    const linkHrefSubstr = linkHref.substring(3);
-    const linkHrefIndexSubstr = linkHref.replace(/\.\.\//g, '').replace(/\?skipIntro/g, '');
+    // Check if the currentURL is the root
+  if (currentURL === '/' && linkPage === 'index') {
+    // Add selected class to Home link
+    link.classList.add('selected');
+  } else if (linkPage && currentURL.includes(linkPage)) {
+    link.classList.add('selected');
+  }
 
-    // Check if the currentURL includes the linkHref after removing '../' and '?skipIntro'
-    if ( currentURL.includes(linkHrefSubstr) || currentURL.includes(linkHrefIndexSubstr)) {
-      link.classList.add('selected');
-    } 
+    // // Removing '../' and '?skipIntro' from the link href
+    // const linkHrefSubstr = linkHref.substring(3);
+    // const linkHrefIndexSubstr = linkHref.replace(/\.\.\//g, '').replace(/\?skipIntro/g, '');
+    
+    // // Check if the currentURL includes the linkHref after removing '../' and '?skipIntro'
+    // if ( currentURL.includes(linkHrefSubstr) || currentURL.includes(linkHrefIndexSubstr)) {
+    //   link.classList.add('selected');
+    // } 
   });
 });
 

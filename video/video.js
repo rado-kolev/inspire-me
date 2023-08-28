@@ -1,3 +1,12 @@
+// Wait for the page to load
+document.addEventListener('DOMContentLoaded', () => {
+  // Create a GSAP timeline
+  const tl = gsap.timeline();
+
+  tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 }, "+=1");
+  tl.fromTo(".banner", { opacity: 0 }, { opacity: 1 }, "-=1");
+});
+
 // *** Aray with videos data ***
 
 const videosData = [

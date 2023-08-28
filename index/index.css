@@ -44,7 +44,7 @@
 /* Header */
 
 header {
-  background: url(../index/hero.jpg) center/cover no-repeat;
+  background: url('../index/hero.jpg') center/cover no-repeat;
 }
 
 

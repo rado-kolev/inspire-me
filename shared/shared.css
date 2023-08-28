@@ -238,6 +238,7 @@ nav {
   font-family: var(--ff-primary);
   color: var(--clr-white);
   text-shadow: 2px 2px 2px rgba(3, 7, 250, 0.5);
+  opacity: 0;
 }
 
 .banner span {
