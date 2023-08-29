@@ -41,9 +41,9 @@ export function createNavbar() {
 
   const links = [
     { text: 'Home', href: '../index.html?skipIntro' },
-    { text: 'Video', href: '../video/video.html' },
-    { text: 'Audio', href: '../audio/audio.html' },
-    { text: 'About Us', href: '../about/about.html' }
+    { text: 'Video', href: '../video.html' },
+    { text: 'Audio', href: '../audio.html' },
+    { text: 'About Us', href: '../about.html' }
   ];
 
   links.forEach((link) => {
@@ -196,9 +196,9 @@ export function createFooter() {
 
   const navLinks = [
     { text: 'Home', href: '../index.html?skipIntro' },
-    { text: 'Video', href: '../video/video.html' },
-    { text: 'Audio', href: '../audio/audio.html' },
-    { text: 'About Us', href: '../about/about.html' },
+    { text: 'Video', href: '../video.html' },
+    { text: 'Audio', href: '../audio.html' },
+    { text: 'About Us', href: '../about.html' },
   ];
 
   navLinks.forEach((link) => {
@@ -234,6 +234,7 @@ export function createFooter() {
     const a = document.createElement('a');
     a.href = link.href;
     a.className = link.icon;
+    a.target = '_blank';
     socialIconsDiv.appendChild(a);
   });
 

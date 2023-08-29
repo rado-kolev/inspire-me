@@ -263,7 +263,7 @@ Fixed Navbar
 }
 
 .fixed__nav .nav__logo {
-  content: url(../shared/logo-white-word.png);
+  content: url('../shared/logo-white-word.png');
 }
 
 .fixed__nav .nav__logo, .fixed__nav .nav__header a {

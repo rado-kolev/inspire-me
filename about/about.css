@@ -1,7 +1,7 @@
-@import url(../index/index.css);
+@import url('../index/index.css');
 
 header {
-  background: url(./hero.jpg) center/cover no-repeat;
+  background: url('../about/hero.jpg') center/cover no-repeat;
 }
 
 .banner span {
