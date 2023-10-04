@@ -1,12 +1,14 @@
 # InspireMe
 
-### [Live Site](https://inspire-me-your-motivation.netlify.app)
+## [Live Site](https://inspire-me-your-motivation.netlify.app)
 
 <br/>
 
 ## Description
 
 InspireMe is a university project from the web development module and by the case scenario aims to inspire users by providing them with a compilation of motivational speeches and videos from guest speakers. The current repository is a rework of the original project.
+
+<br/>
 
 ## Screenshot
 
