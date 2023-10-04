@@ -2,4 +2,4 @@
 
 ### [Live Site](https://inspire-me-your-motivation.netlify.app)
 
-![Website](https://i.ibb.co/hF47z7K/screenshot-inspire-me-your-motivation-netlify-app-2023-10-04-17-18-28-364.png)
+![Website](https://i.ibb.co/WtTgyt7/2023-10-04-17-16-15-Inspire-Me-Home-Page-Opera.png)
