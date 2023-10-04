@@ -12,7 +12,7 @@ InspireMe is a university project from the web development module and by the cas
 
 ## Screenshot
 
-![Website screenshots](./demo/inspire-me-screenshot.png)
+![Website screenshots](./demo/screenshot-inspire-me.png)
 
 <br/>
 
