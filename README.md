@@ -2,4 +2,4 @@
 
 ### [Live Site](https://inspire-me-your-motivation.netlify.app)
 
-![Website](https://ibb.co/t41sRr4)
+![Website](https://imageupload.io/fRL5JIbLpaG2Gt5)
