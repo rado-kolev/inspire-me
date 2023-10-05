@@ -14,7 +14,7 @@ The intro animation is created with GSAP.
 
 ## Screenshot
 
-![Website screenshots](./demo/screenshot-inspire-me.png)
+![Website screenshots](./demo/inspire-me-screenshot.png)
 
 <br/>
 
